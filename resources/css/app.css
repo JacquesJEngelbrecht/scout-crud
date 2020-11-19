@@ -1,0 +1,16 @@
+body {
+    font-family: "Nunito";
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+}
+
+.card-header {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
