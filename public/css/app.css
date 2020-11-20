@@ -10903,3 +10903,142 @@ a.text-dark:focus {
   }
 }
 
+body {
+  text-align: center;
+  font-family: "Nunito";
+  /*@include breakpoints(mobile) {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: auto;
+      position: absolute;
+      top: 100%;
+      left: 0;
+  }
+  @include breakpoints(tablet) {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: auto;
+      position: absolute;
+      top: 100%;
+      left: 0;
+  }*/
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+}
+
+.card-header {
+  margin: 0 auto;
+  float: none;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-body {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-body {
+    font-size: 1rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .table tr th {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .table tr th {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .table tbody tr td {
+    font-size: 10px;
+  }
+
+  .table tbody tr td button {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 992px) {
+  .table tbody tr td {
+    font-size: 14px;
+  }
+}
+
+.new-user-modal {
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px) {
+  .new-user-modal {
+    font-size: 12px;
+    width: 100%;
+  }
+}
+
+.new-user-modal button {
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .new-user-modal {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .new-user-modal button {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .delete-modal {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .delete-modal {
+    width: 50%;
+  }
+}
+

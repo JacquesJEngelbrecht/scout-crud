@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container-fluid">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center table-contents">
         <div class="col md-8">
             @if(Session::has('message'))
             <div class="alert alert-success">
@@ -168,8 +168,8 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
-    <div class="modal-dialog">
+<div class="modal fade" style="" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+    <div class="modal-dialog delete-modal">
         <form action="{{route('display.destroy',[$user->id])}}" method="POST">@csrf
             {{method_field('DELETE')}}
             <div class="modal-content">

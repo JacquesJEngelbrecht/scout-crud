@@ -16,25 +16,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <style>
-            
-            body {
-                font-family: 'Nunito';
-            }
-
-            .card {
-                margin: 0 auto;
-                float: none;
-            }
-
-            .card-header {
-                margin: 0 auto;
-                float: none;
-                width: 100%;
-                text-align: center;
-                font-size: 2rem;
-            }
-        </style>
+        <style></style>
     </head>
     <body class="antialiased">
         @yield('content')

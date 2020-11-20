@@ -1,8 +1,138 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+//Media breakpoints
+@import "_breakpoints";
+
+body {
+    text-align: center;
+    font-family: "Nunito";
+    //Options to force the screen to landscape
+    /*@include breakpoints(mobile) {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: auto;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    @include breakpoints(tablet) {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: auto;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }*/
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+}
+
+.card-header {
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-body {
+    @include breakpoints(mobile) {
+        font-size: $h1sml;
+    }
+    @include breakpoints(tablet) {
+        font-size: $h1med;
+    }
+}
+
+h1 {
+    font-size: $h1big;
+    font-weight: bold;
+    @include breakpoints(mobile) {
+        font-size: $h1sml;
+    }
+    @include breakpoints(tablet) {
+        font-size: $h1big;
+    }
+}
+
+p {
+    @include breakpoints(tablet) {
+        font-size: 12px;
+    }
+
+    @include breakpoints(mobile) {
+    }
+}
+
+.table {
+    tr {
+        th {
+            @include breakpoints(tablet) {
+                font-size: 12px;
+            }
+            @include breakpoints(laptop) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.table {
+    tbody {
+        tr {
+            td {
+                @include breakpoints(tablet) {
+                    font-size: 10px;
+                    button {
+                        font-size: 10px;
+                    }
+                    @include breakpoints(laptop) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.new-user-modal {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+
+    @include breakpoints(mobile) {
+        font-size: 12px;
+        width: 100%;
+    }
+    button {
+        font-size: 10px;
+    }
+    @include breakpoints(tablet) {
+        font-size: 14px;
+        width: 80%;
+        button {
+            font-size: 12px;
+        }
+    }
+}
+
+.delete-modal {
+    @include breakpoints(mobile) {
+        width: 50%;
+    }
+    @include breakpoints(tablet) {
+        width: 50%;
+    }
+}
