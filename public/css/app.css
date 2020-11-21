@@ -10936,76 +10936,100 @@ body {
   float: none;
   width: 100%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .card-body {
-    font-size: 10px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .card-body {
+  .card-header {
     font-size: 1rem;
   }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .card-header {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-body {
+    font-size: 0.7rem;
+  }
+
+  .card-body input {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .card-body {
+    font-size: 1rem;
+  }
+
+  .card-body input {
+    font-size: 0.8rem;
+  }
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 10px;
+    font-size: 1rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   h1 {
     font-size: 2rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   p {
-    font-size: 12px;
+    font-size: 0.7rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .table tr th {
-    font-size: 12px;
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  p {
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .table tr th {
-    font-size: 16px;
+@media only screen and (max-width: 600px) {
+  .table-display th {
+    font-size: 0.6rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .table tbody tr td {
-    font-size: 10px;
-  }
-
-  .table tbody tr td button {
-    font-size: 10px;
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .table-display th {
+    font-size: 0.7rem;
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 992px) {
-  .table tbody tr td {
-    font-size: 14px;
+@media only screen and (max-width: 600px) {
+  .table-display td {
+    font-size: 0.5rem;
+  }
+
+  .table-display td button {
+    font-size: 0.5rem;
   }
 }
 
-.new-user-modal {
-  margin: 0 auto;
-  display: inline-block;
-  vertical-align: middle;
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .table-display td {
+    font-size: 0.6rem;
+  }
+
+  .table-display td button {
+    font-size: 0.6rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -11013,16 +11037,16 @@ h1 {
     font-size: 12px;
     width: 100%;
   }
+
+  .new-user-modal button {
+    font-size: 10px;
+  }
 }
 
-.new-user-modal button {
-  font-size: 10px;
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   .new-user-modal {
-    font-size: 14px;
-    width: 80%;
+    font-size: 10px;
+    width: 100%;
   }
 
   .new-user-modal button {
@@ -11030,15 +11054,54 @@ h1 {
   }
 }
 
+.delete-modal {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+
 @media only screen and (max-width: 600px) {
   .delete-modal {
-    width: 50%;
+    font-size: 12px;
+  }
+
+  .delete-modal button {
+    font-size: 10px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
   .delete-modal {
-    width: 50%;
+    font-size: 14px;
+  }
+
+  .delete-modal button {
+    font-size: 12px;
+  }
+}
+
+.img-thumbnail {
+  border: 0 none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.p-tag {
+  -webkit-animation: p-tag-text 2s linear infinite;
+          animation: p-tag-text 2s linear infinite;
+}
+
+@-webkit-keyframes p-tag-text {
+  50% {
+    color: black;
+    font-size: 1rem;
+  }
+}
+
+@keyframes p-tag-text {
+  50% {
+    color: black;
+    font-size: 1rem;
   }
 }
 

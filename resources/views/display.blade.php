@@ -16,7 +16,7 @@
                     </div>
             </div>
         </div>
-        <table class="table table-dark">
+        <table class="table table-dark table-display">
             <thead>
                 <tr>
                     <th scope="col">Username</th>
@@ -57,7 +57,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable new-user-modal ">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Create New User</h5>
@@ -169,7 +169,7 @@
   </div>
 </div>
 <div class="modal fade" style="" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
-    <div class="modal-dialog delete-modal">
+    <div class="modal-dialog modal-dialog-centered delete-modal">
         <form action="{{route('display.destroy',[$user->id])}}" method="POST">@csrf
             {{method_field('DELETE')}}
             <div class="modal-content">

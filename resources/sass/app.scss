@@ -44,84 +44,87 @@ body {
     float: none;
     width: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    @include breakpoints(mobile) {
+        font-size: $card-header-mobile;
+    }
+    @include breakpoints(tablet) {
+        font-size: $card-header-tablet;
+    }
 }
 
 .card-body {
     @include breakpoints(mobile) {
-        font-size: $h1sml;
+        font-size: $card-body-mobile;
+        input {
+            font-size: $card-input-mobile;
+        }
     }
     @include breakpoints(tablet) {
-        font-size: $h1med;
-    }
-}
+        font-size: $card-body-tablet;
 
-h1 {
-    font-size: $h1big;
-    font-weight: bold;
-    @include breakpoints(mobile) {
-        font-size: $h1sml;
-    }
-    @include breakpoints(tablet) {
-        font-size: $h1big;
-    }
-}
-
-p {
-    @include breakpoints(tablet) {
-        font-size: 12px;
-    }
-
-    @include breakpoints(mobile) {
-    }
-}
-
-.table {
-    tr {
-        th {
-            @include breakpoints(tablet) {
-                font-size: 12px;
-            }
-            @include breakpoints(laptop) {
-                font-size: 16px;
-            }
+        input {
+            font-size: $card-input-tablet;
         }
     }
 }
 
-.table {
-    tbody {
-        tr {
-            td {
-                @include breakpoints(tablet) {
-                    font-size: 10px;
-                    button {
-                        font-size: 10px;
-                    }
-                    @include breakpoints(laptop) {
-                        font-size: 14px;
-                    }
-                }
+h1 {
+    font-size: $h1-bigger;
+    font-weight: bold;
+    @include breakpoints(mobile) {
+        font-size: $h1-mobile;
+    }
+    @include breakpoints(tablet) {
+        font-size: $h1-tablet;
+    }
+}
+
+p {
+    @include breakpoints(mobile) {
+        font-size: $p-mobile;
+    }
+    @include breakpoints(tablet) {
+        font-size: $p-tablet;
+    }
+}
+
+.table-display {
+    th {
+        @include breakpoints(mobile) {
+            font-size: $table-th-mobile;
+        }
+        @include breakpoints(tablet) {
+            font-size: $table-th-tablet;
+        }
+    }
+    td {
+        @include breakpoints(mobile) {
+            font-size: $table-td-mobile;
+            button {
+                font-size: $table-td-mobile;
+            }
+        }
+        @include breakpoints(tablet) {
+            font-size: $table-td-tablet;
+            button {
+                font-size: $table-td-tablet;
             }
         }
     }
 }
 
 .new-user-modal {
-    margin: 0 auto;
-    display: inline-block;
-    vertical-align: middle;
-
     @include breakpoints(mobile) {
         font-size: 12px;
         width: 100%;
-    }
-    button {
-        font-size: 10px;
+        button {
+            font-size: 10px;
+        }
     }
     @include breakpoints(tablet) {
-        font-size: 14px;
-        width: 80%;
+        font-size: 10px;
+        width: 100%;
         button {
             font-size: 12px;
         }
@@ -129,10 +132,38 @@ p {
 }
 
 .delete-modal {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
     @include breakpoints(mobile) {
-        width: 50%;
+        font-size: 12px;
+
+        button {
+            font-size: 10px;
+        }
     }
     @include breakpoints(tablet) {
-        width: 50%;
+        font-size: 14px;
+
+        button {
+            font-size: 12px;
+        }
+    }
+}
+
+.img-thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.p-tag {
+    animation: p-tag-text 2s linear infinite;
+}
+
+@keyframes p-tag-text {
+    50% {
+        color: black;
+        font-size: 1rem;
     }
 }
