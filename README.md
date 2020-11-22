@@ -1,7 +1,7 @@
 <!--Instructions to run this project
 Clone the repository from provided link to your local machine.
 Use your Command Prompt and navigate to the folder where you saved this repository
-Run the php artisan serve command and enter the provided URL in your browser.
+Run the php artisan serve command (Instructions on how to install Laravel and Composer can be found on this url: https://laravel.com/docs/4.2/quick and for Composer: https://getcomposer.org/ ) and enter the provided URL in your browser.
 
 -->
 
